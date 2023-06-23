@@ -1,0 +1,59 @@
+h1 {
+  font-family: var(--st-main-text);
+  font-weight: 600;
+  line-height: 3rem;
+  font-size: 2.75rem;
+}
+h2 {
+  font-family: var(--st-main-text);
+  font-weight: 500;
+  line-height: 2.5rem;
+  font-size: 2.25rem;
+}
+h3 {
+  font-family: var(--st-main-text);
+  font-weight: 300;
+  line-height: 2rem;
+  font-size: 1.75rem;
+}
+h4 {
+  font-family: var(--st-other-text);
+  font-weight: 600;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+}
+h5 {
+  font-family: var(--st-main-text);
+  font-weight: 200;
+  line-height: 1rem;
+  font-size: 1.25rem;
+}
+h6 {
+  font-family: var(--st-main-text);
+  font-weight: 400;
+  line-height: 1rem;
+  font-size: 0.60rem;
+}
+p {
+  font-family: var(--st-other-text);
+  font-weight: 200;
+  line-height: 1.5rem;
+  font-size: 0.75rem;
+}
+:root{
+  --st-primary: #ec197b; 
+  --st-primary-light: #f75fa6;
+  --st-primary-dark: #db2777;
+  --st-light-pink: #ffeff8;
+  --st-secondary: #1dd396;
+  --st-secondary-dark: #10ac78;
+  --st-primary-text: #343e4d;
+  --st-yellow: #fde047;
+  --st-blue: #38bdf8;
+  --st-orange: #fb923c;
+  --st-mid-red: #e61934;
+  --st-light-grey: #e8ebf0;
+  --st-white: #fafafa;
+  --st-main-text: 'Poppins', sans-serif;
+  --st-other-text: 'Montserrat', sans-serif; 
+}
