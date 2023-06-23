@@ -3,6 +3,7 @@ import './App.css';
 import {Routes,Route} from 'react-router-dom';
 import {Men} from './containers/Men';
 import {Home} from './containers/Home';
+import {Mycart} from './components/Mycart'
 
 function App() {
   return (
@@ -10,6 +11,8 @@ function App() {
         <Route path='/' element={<Home/>}>
         </Route>
         <Route path='/Men' element={<Men/>}>
+        </Route>
+        <Route path='/Mycart' element={<Mycart/>}>
         </Route>
        </Routes>
 

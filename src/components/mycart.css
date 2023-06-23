@@ -1,0 +1,57 @@
+.shop{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.main-cart{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+.cart{
+    font-size: 2rem;
+}
+.item-count{
+    font-size: 1.25rem;
+}
+.items-info{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-evenly;
+}
+
+.add-sub{
+    display: flex;
+    gap:2rem;
+    margin-top: 3rem;
+}
+
+.ct{
+    width:2rem;
+    height: 1rem;
+}
+
+.price{
+    margin-top: 3rem;
+}
+
+.remove-item{
+    margin-top: 3rem;
+}
+.cart-items-container{
+    height: 56rem;
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 8rem;
+}
+.pay{
+    border-radius: 0.3rem;
+    width:4rem;
+    height:3rem;
+    margin-bottom: 3rem;
+}
