@@ -1,0 +1,94 @@
+.shop{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+.main-cart{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4rem;
+}
+.cart{
+    font-size: 2rem;
+}
+.item-count{
+    font-size: 1.25rem;
+}
+.items-info{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.add-sub{
+    display: flex;
+    margin-top: 3rem;
+}
+.plus,.minus:hover{
+  cursor: pointer;
+}
+
+.ct{
+   font-size: 1.5rem;
+}
+
+.price{
+    margin-top: 3rem;
+}
+
+.remove-item{
+    margin-top: 3rem;
+}
+.remove-item :hover{
+    cursor: pointer;
+}
+.cart-items-container{
+    height: 56rem;
+    width: 90%;
+    overflow-y: scroll;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8rem;
+    gap:3rem;
+}
+.pay{
+    border-radius: 0.3rem;
+    width:3.5rem;
+    height:2.7rem;
+
+}
+.clear{
+    border-radius: 0.3rem;
+    width:6rem;
+    height:2.7rem;
+}
+.pay-clear{
+    display: flex;
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 640px){
+    .total{
+        margin-right: 2rem;
+        gap:1rem;
+    }
+    .pay-clear{
+        gap:1rem;
+    }
+    .totalhead{
+        font-size: 1rem;
+    }
+    .titlehead{
+        font-size: 1rem;
+    }
+    .img{
+        width: 3.5rem;
+    }
+    .empty{
+        font-size: 1.75rem;
+    }
+}

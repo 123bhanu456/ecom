@@ -1,0 +1,31 @@
+.logo{
+    width:150px;
+    height:90px;
+}
+
+.maindiv{
+    display: flex;
+    justify-content: center;
+}
+
+.name{
+    font-family:italic;
+}
+.nav{
+    background-color: #27374D;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+.navdata{
+    color: white;
+    padding: 1rem;
+}
+.navdata a.active{
+  text-decoration: none;
+  color:orange;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
