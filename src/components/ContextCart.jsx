@@ -3,12 +3,49 @@ import {NavLink} from 'react-router-dom';
 import {Items} from './Items'
 import {CartContext} from './Mycart'
 
+
 function ContextCart(){
-    const Item=useContext(CartContext);
-    let sum=0;
-    Item.map((curItem)=>{
-        sum+=curItem.price*curItem.amount
-    })
+    const {Item,Clear,totalItem,totalPrice} =useContext(CartContext);
+
+    if(Item.length===0){
+      return(
+        <div>
+        <header>
+      <div className='shop'>
+      <div>
+      <NavLink to='/'> <i class="fa-solid fa-arrow-right-long">  Shop More  </i></NavLink>
+      </div>
+      <div>
+      <i class="fa-sharp fa-solid fa-cart-shopping">{totalItem}</i>
+      </div>
+      </div>
+     
+    </header>
+    
+    <section className='main-cart'>
+      <div>
+      <p className='cart'>My Cart</p>
+     <p className='item-count'>You have <span>{totalItem}</span> items in your cart</p>
+      </div>
+    
+      <div className='cart-items'>
+      <h2 className='empty'>Your Cart Is Empty</h2>
+      </div>
+      
+      <div className='total'>
+      <div><h3 className='totalhead'>Total Price {totalPrice}$</h3></div>
+        <div className='pay-clear'>
+          <div> <button className='pay'>Pay</button></div>
+          <div> <button className='clear' onClick={()=>Clear()}>Clear cart</button></div>
+        </div>
+          
+      </div>
+    </section>
+    
+    </div>
+        
+      )
+    }
   return (
 
     <div>
@@ -18,7 +55,7 @@ function ContextCart(){
   <NavLink to='/'> <i class="fa-solid fa-arrow-right-long">  Shop More  </i></NavLink>
   </div>
   <div>
-  <i class="fa-sharp fa-solid fa-cart-shopping">{Item.length}</i>
+  <i class="fa-sharp fa-solid fa-cart-shopping">{totalItem}</i>
   </div>
   </div>
  
@@ -27,7 +64,7 @@ function ContextCart(){
 <section className='main-cart'>
   <div>
   <p className='cart'>My Cart</p>
- <p className='item-count'>You have <span>{Item.length}</span> items in your cart</p>
+ <p className='item-count'>You have <span>{totalItem}</span> items in your cart</p>
   </div>
 
   <div className='cart-items'>
@@ -42,10 +79,12 @@ function ContextCart(){
   </div>
   
   <div className='total'>
-     <div>
-      <h3>Total amount :{sum}$</h3>
-       <button className='pay'>Pay</button>
-     </div> 
+  <div><h3 className='totalhead'>Total Price {totalPrice}$</h3></div>
+    <div className='pay-clear'>
+      <div> <button className='pay'>Pay</button></div>
+      <div> <button className='clear' onClick={()=>Clear()}>Clear cart</button></div>
+    </div>
+      
   </div>
 </section>
 

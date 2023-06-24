@@ -7,7 +7,7 @@ const Products=[
         description:"Black",
         price:100,
         img:`${cloth}`,
-        amount:1
+        quantity:1
 
     },
     {
@@ -16,7 +16,7 @@ const Products=[
         description:"Black",
         price:200,
         img:`${cloth}`,
-        amount:4
+        quantity:1
 
     },
     {
@@ -25,7 +25,7 @@ const Products=[
         description:"Black",
         price:300,
         img:`${cloth}`,
-        amount:2
+        quantity:1
 
     },
     {
@@ -34,7 +34,7 @@ const Products=[
         description:"Black",
         price:400,
         img:`${cloth}`,
-        amount:1
+        quantity:1
 
     }, {
         id:5,
@@ -42,7 +42,7 @@ const Products=[
         description:"Black",
         price:600,
         img:`${cloth}`,
-        amount:3
+        quantity:1
 
     }
 
