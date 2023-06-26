@@ -1,4 +1,4 @@
-import cloth from './clothing/dress.jpeg';
+import cloth from './womenCloth/1.png';
 
 const Products=[
     {
@@ -44,7 +44,25 @@ const Products=[
         img:`${cloth}`,
         quantity:1
 
+    },{
+        id:6,
+        title:"SHIRT",
+        description:"Black",
+        price:100,
+        img:`${cloth}`,
+        quantity:1
+
+    },
+    {
+        id:7,
+        title:"SHIRT",
+        description:"Black",
+        price:100,
+        img:`${cloth}`,
+        quantity:1
+
     }
+
 
 ]
 

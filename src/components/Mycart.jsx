@@ -1,22 +1,25 @@
-import React,{createContext, useEffect, useReducer} from 'react';
+import React,{createContext,useEffect, useReducer} from 'react';
 import './mycart.css'
 
-import {Products} from './Products.js'
 import { ContextCart } from './ContextCart';
 import { Reducer } from './Reducer';
-
+import {Products} from './Products';
 import { Nav } from '../navbar/Nav'
+
 
 export const CartContext=createContext();
 
-const initialState={
-  Item:Products,
-  totalPrice:0,
-  totalItem:0,
 
-};
 
 function Mycart(){
+
+  const initialState={
+    Item:Products,
+    totalPrice:0,
+    totalItem:0,
+  
+  };
+
 
   const [state,dispatch] =useReducer(Reducer,initialState);
     function Remove(id){
