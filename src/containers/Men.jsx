@@ -1,10 +1,9 @@
 import React from 'react';
-import {Nav} from '../navbar/Nav';
+import { MenPage } from '../components/MenPage';
 
 function Men(){
   return (
-    <Nav/>
-    
+    <MenPage/>
   )
 }
 

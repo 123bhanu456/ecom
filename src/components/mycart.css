@@ -6,7 +6,7 @@
 .main-cart{
     display: flex;
     flex-direction: column;
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 .cart{
     font-size: 2rem;
@@ -17,7 +17,7 @@
 .items-info{
     display: flex;
     margin-top: 3rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .add-sub{
@@ -90,5 +90,8 @@
     }
     .empty{
         font-size: 1.75rem;
+    }
+    .items-info{
+        gap:2rem;
     }
 }
