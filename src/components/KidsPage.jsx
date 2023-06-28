@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './KidsPage.css'
 import { Nav } from '../navbar/Nav';
 import { KidsProd } from './KidsProd';
+import {Addtoc} from './Contexts';
+
 
 
 function KidsPage(){
 
     const Items=[...KidsProd];
+    const {AddCart}=useContext(Addtoc);
+
+    
   return (
     <div>
        <Nav/>
@@ -31,7 +36,7 @@ function KidsPage(){
 
                         <div className='price-addCart'>
                            <span className='font'>{price}$</span> 
-                           <span><i className="fa-sharp fa-solid fa-cart-shopping add"></i></span>
+                           <span><i className="fa-sharp fa-solid fa-cart-shopping add" onClick={()=>AddCart(item)}></i></span>
                         </div>
                        
                     </div>

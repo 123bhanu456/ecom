@@ -1,24 +1,26 @@
-import React,{createContext,useEffect, useReducer} from 'react';
+import React,{createContext,useContext,useEffect, useReducer} from 'react';
 import './mycart.css'
 
 import { ContextCart } from './ContextCart';
 import { Reducer } from './Reducer';
-import {Products} from './Products';
 import { Nav } from '../navbar/Nav'
+import { Addtoc } from './Contexts';
 
 
 export const CartContext=createContext();
 
 
-
 function Mycart(){
 
-  const initialState={
-    Item:Products,
-    totalPrice:0,
-    totalItem:0,
-  
-  };
+ const {Products}=useContext(Addtoc);
+
+ const initialState={
+  Item:Products,
+  totalPrice:0,
+  totalItem:0,
+
+};
+
 
 
   const [state,dispatch] =useReducer(Reducer,initialState);

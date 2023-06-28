@@ -31,7 +31,7 @@ function Nav(){
            <NavLink to='/Kids'> Kids</NavLink>
            </div>
            <div className="navdata">
-           <NavLink to='/Mycart'> Mycart</NavLink>
+           <NavLink to='/Mycart'> Mycart<i className="fa-sharp fa-solid fa-cart-shopping add"></i></NavLink>
            </div>
         </div>
         </div>
