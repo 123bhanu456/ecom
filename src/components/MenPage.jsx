@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './MenPage.css'
 import { Nav } from '../navbar/Nav';
 import { MenProd } from './MenProd';
+import { Addtoc } from './Contexts';
 
 function MenPage(){
 
     const Items=[...MenProd];
+    const {AddCart}=useContext(Addtoc);
   return (
     <div>
        <Nav/>
@@ -30,7 +32,7 @@ function MenPage(){
 
                         <div className='price-addCart'>
                            <span className='font'>{price}$</span> 
-                           <span><i className="fa-sharp fa-solid fa-cart-shopping add"></i></span>
+                           <span><i className="fa-sharp fa-solid fa-cart-shopping add" onClick={()=>AddCart(item)}></i></span>
                         </div>
                        
                     </div>
