@@ -3,6 +3,7 @@ import './KidsPage.css'
 import { Nav } from '../navbar/Nav';
 import { KidsProd } from './KidsProd';
 import {Addtoc} from './Contexts';
+import { Footer } from './Footer';
 
 
 
@@ -45,6 +46,7 @@ function KidsPage(){
             };
            
         </sec>
+        <Footer/>
     </div>
   )
 }

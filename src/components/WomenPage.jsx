@@ -3,6 +3,7 @@ import {WomenProd} from './WomenProd'
 import './WomenPage.css'
 import { Nav } from '../navbar/Nav';
 import { Addtoc } from './Contexts';
+import { Footer } from './Footer';
 
 function WomenPage (){
 
@@ -41,6 +42,7 @@ function WomenPage (){
             };
            
         </sec>
+        <Footer/>
     </div>
   )
 }

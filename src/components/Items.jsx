@@ -23,9 +23,9 @@ function Items({id,title,description,price,img,quantity}){
                   </div>
 
                   <div className='add-sub'>
-                  <i className="fa-solid fa-minus sub  minus" onClick={()=>Sub(id)} ></i>
+                  <i class="fa-solid fa-minus sub minus" onClick={()=>Sub(id)} ></i>
                   <p className='ct'>{quantity}</p>
-                  <i className="fa-regular fa-plus add  plus" onClick={()=>Add(id)} ></i>
+                  <i class="fa-solid fa-plus plus"  onClick={()=>Add(id)}></i>
                   </div>
 
                   <div className='price'>

@@ -10,9 +10,11 @@
 }
 .cart{
     font-size: 2rem;
+    color: black;
 }
 .item-count{
     font-size: 1.25rem;
+    color: black;
 }
 .items-info{
     display: flex;
@@ -28,8 +30,13 @@
   cursor: pointer;
 }
 
+.color{
+    color: black;
+}
+
 .ct{
    font-size: 1.5rem;
+   color: black;
 }
 
 .price{
@@ -58,12 +65,16 @@
     border-radius: 0.3rem;
     width:3.5rem;
     height:2.7rem;
+    background-color: #27374D;
+    color: white;
 
 }
 .clear{
     border-radius: 0.3rem;
     width:6rem;
     height:2.7rem;
+    background-color: #27374D;
+    color: white;
 }
 .pay-clear{
     display: flex;
@@ -86,7 +97,7 @@
         font-size: 1rem;
     }
     .img{
-        width: 3.5rem;
+        width: 2rem;
     }
     .empty{
         font-size: 1.75rem;

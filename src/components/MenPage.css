@@ -36,6 +36,9 @@
 .add:hover{
     cursor: pointer;
 }
+.add{
+    color: white;
+}
 
 .title-desc{
     padding:0rem 2rem;
