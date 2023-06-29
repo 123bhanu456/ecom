@@ -3,7 +3,7 @@ import './MenPage.css'
 import { Nav } from '../navbar/Nav';
 import { MenProd } from './MenProd';
 import { Addtoc } from './Contexts';
-
+import { Footer } from './Footer';
 function MenPage(){
 
     const Items=[...MenProd];
@@ -41,6 +41,7 @@ function MenPage(){
             };
            
         </sec>
+        <Footer/>
     </div>
   )
 }

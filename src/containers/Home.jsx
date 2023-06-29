@@ -1,7 +1,8 @@
 import React from 'react'
 import { Nav } from '../navbar/Nav'
 import  './HomeStyles.css'
-import home1 from './images/home1.png'
+import home1 from './images/home1.png';
+import { Footer } from '../components/Footer'
 
 function Home(){
   return (
@@ -15,6 +16,7 @@ function Home(){
         <img src={home1} alt="home1"  className="img1"/>
       </div>
     </div>
+    <Footer/>
     </div>
     
   )
