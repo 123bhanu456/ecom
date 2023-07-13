@@ -21,7 +21,10 @@ function Signup(){
         })
       }).then((res)=>res.json())
       .then((data)=>{
-        console.log(data,"userregisterd")
+        console.log(data,"userregisterd");
+        if(data.status==="ok")
+        alert("registerd sucessful");
+        window.location.href="./Login";
       });
      
 

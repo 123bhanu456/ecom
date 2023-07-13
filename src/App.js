@@ -8,9 +8,12 @@ import { Men } from './containers/Men';
 import { Kids } from './containers/Kids';
 import { Signup } from './components/Signup';
 import { Login } from './components/Login';
+import {LoginHome} from './containers/LoginHome';
 function App() {
   return (
        <Routes>
+        <Route path='/LoginHome' element={<LoginHome/>}>
+        </Route>
         <Route path='/' element={<Home/>}>
         </Route>
         <Route path='/Women' element={<Women/>}>
@@ -23,7 +26,7 @@ function App() {
         </Route>
         <Route path='/Signup' element={<Signup/>}>
         </Route>
-        <Route path='/login' element={<Login/>}>
+        <Route path='/Login' element={<Login/>}>
         </Route>
        </Routes>
 

@@ -35,7 +35,8 @@ function Home(){
           <Nav/>
     <div className='contentdiv'>
       <div className='content'>
-        <h1 className='header'>Give Yourself A New Look</h1>
+        <h1 className='header'>Hey {user.fname}</h1>
+      <h1 className='header'> Give Yourself A New Look</h1>
       </div>
       <div className='img'>
         <img src={home1} alt="home1"  className="img1"/>

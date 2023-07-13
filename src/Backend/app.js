@@ -40,11 +40,11 @@ app.post("/register",async(req,res)=>{
 
 app.post("/login",async(req,res)=>{
     const {email,password}=req.body;
-    const userexist=await user.find({email});
+    const userexist=await user.findOne({email});
     if(!userexist){
         return res.send({error:"no user"});
     }
-    const x=userexist[0].password;
+    const x=userexist.password;
     if(await bcrypt.compare(password,x)){
         const token=jwt.sign({email:userexist.email},JWT_SECRET);
         if(res.status(201)){
@@ -59,10 +59,10 @@ app.post("/login",async(req,res)=>{
 app.post('/userDetails',async(req,res)=>{
     const {token}=req.body;
     try{
-        const userd=jwt.verify(token,JWT_SECRET);
-        const useremail=userd.email;
+        const User=jwt.verify(token,JWT_SECRET);
+        const useremail=User.email;
         console.log(useremail);
-        user.find({useremail}).then((data)=>{
+        user.findOne({email:useremail}).then((data)=>{
             res.send({status:"ok",data:data});
         })
         .catch((error)=>{
