@@ -12,9 +12,9 @@ import {LoginHome} from './containers/LoginHome';
 function App() {
   return (
        <Routes>
-        <Route path='/LoginHome' element={<LoginHome/>}>
+        <Route path='/' element={<LoginHome/>}>
         </Route>
-        <Route path='/' element={<Home/>}>
+        <Route path='/UserHome' element={<Home/>}>
         </Route>
         <Route path='/Women' element={<Women/>}>
         </Route>

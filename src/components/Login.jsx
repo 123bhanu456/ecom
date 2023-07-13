@@ -24,7 +24,7 @@ function Login(){
         if(data.status==="ok")
         alert("login sucessful");
         window.localStorage.setItem("token",data.data);
-        window.location.href="./";
+        window.location.href="/UserHome";
       });
      
     }
