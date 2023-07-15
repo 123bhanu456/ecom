@@ -24,6 +24,7 @@ function Login(){
         if(data.status==="ok")
         alert("login sucessful");
         window.localStorage.setItem("token",data.data);
+        window.localStorage.setItem("LoggedIn",true);
         window.location.href="/UserHome";
       });
      

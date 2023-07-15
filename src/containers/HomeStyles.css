@@ -36,3 +36,18 @@
     justify-content: end;
     margin-right:2rem;
 }
+.btdiv{
+    display: flex;
+    justify-content: end;
+    margin:2rem;
+}
+.bt{
+    background-color: #27374D;
+    color: white;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+.bt:hover{
+    cursor: pointer;
+}

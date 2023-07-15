@@ -29,10 +29,17 @@ function Home(){
     });
   },[]);
    
+ function logout(){
+    window.localStorage.clear();
+    window.location.href='./Login';
+  }
  
   return (
     <div>
           <Nav/>
+          <div className='btdiv'>
+            <button className='bt' onClick={logout}>LOG OUT</button>
+          </div>
     <div className='contentdiv'>
       <div className='content'>
         <h1 className='header'>Hey {user.fname}</h1>
