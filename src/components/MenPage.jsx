@@ -4,10 +4,13 @@ import { Nav } from '../navbar/Nav';
 import { MenProd } from './MenProd';
 import { Addtoc } from './Contexts';
 import { Footer } from './Footer';
+import { Link } from "react-router-dom";
 function MenPage(){
 
     const Items=[...MenProd];
     const {AddCart}=useContext(Addtoc);
+    const {Todis}=useContext(Addtoc);
+
   return (
     <div>
        <Nav/>
@@ -18,12 +21,14 @@ function MenPage(){
                Items.map((item)=>{
                 const { id, title, description, price,img} = item;
                 return(
-                    <div key={id} className='containerDiv'>
-                      <div className='imgdiv'>
+                    <div key={id} className='containerDiv' >
+                      <div className='imgdiv' onClick={()=>Todis(item)}>
+                        <Link to='/display'>
                         <img className='img'
                         src={img}
                         alt=""
                       />
+                        </Link>
                         </div>
                         <div className='title-desc'>
                             <p className='font'>{title}</p>
