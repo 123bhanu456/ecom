@@ -19,7 +19,7 @@ function Nav(){
 
         <div className="nav">
            <div className="navdata">
-           <NavLink to='/'> Home</NavLink>
+           <NavLink to='/UserHome'> Home</NavLink>
            </div>
            <div className="navdata">
            <NavLink to='/Men'> Men</NavLink>
