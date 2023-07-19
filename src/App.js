@@ -18,19 +18,19 @@ function App() {
         </Route>
         <Route path='/UserHome' element={islog ==='true'?<Home/>:<LoginHome/>}>
         </Route>
-        <Route path='/Women' element={<Women/>}>
+        <Route path='/Women' element={islog ==='true'?<Women/>:<LoginHome/>}>
         </Route>
-        <Route path='/Men' element={<Men/>}>
+        <Route path='/Men' element={islog ==='true'?<Men/>:<LoginHome/>}>
         </Route>
-        <Route path='/Kids' element={<Kids/>}>
+        <Route path='/Kids' element={islog ==='true'?<Kids/>:<LoginHome/>}>
         </Route>
-        <Route path='/Mycart' element={<Mycart/>}>
+        <Route path='/Mycart' element={islog ==='true'?<Mycart/>:<LoginHome/>}>
         </Route>
         <Route path='/Signup' element={<Signup/>}>
         </Route>
         <Route path='/Login' element={<Login/>}>
         </Route>
-        <Route path='/display' element={<Displaypage/>}>
+        <Route path='/display' element={islog ==='true'?<Displaypage/>:<LoginHome/>}>
         </Route>
        </Routes>
 
