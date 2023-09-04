@@ -55,12 +55,12 @@ function Login(){
             onChange={(e)=>setpswd(e.target.value)}/>
             </div>
 
-            <div className='indiv'>
-             <input type="submit" value="Login" className='btn inp' />
-            </div>
+            <div className='btdiv'>
+            <button className='bt' onClick={handlesub}>Login</button>
+          </div>
 
-            <div className='indiv'>
-               <Link to="/SignUp" className='col'>SignUp</Link>
+            <div className='btdiv'>
+               <Link to="/SignUp" className='col'>SignUp</Link> 
             </div>
             
         </form>
