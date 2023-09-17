@@ -7,7 +7,7 @@ function Login(){
 
     function handlesub(e){
         e.preventDefault();
-        fetch("https://dressup-backend-hw9q.onrender.com/login",{
+        fetch("https://d-up.onrender.com/login",{
         method:"POST",
         crossDomain:true,
         headers:{
