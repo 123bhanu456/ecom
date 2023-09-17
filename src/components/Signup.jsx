@@ -8,7 +8,7 @@ function Signup(){
 
     function handlesub(e){
       e.preventDefault();
-      fetch("http://localhost:5000/register",{
+      fetch("https://dressup-backend-hw9q.onrender.com/register",{
         method:"POST",
         crossDomain:true,
         headers:{
