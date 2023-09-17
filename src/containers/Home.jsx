@@ -11,7 +11,7 @@ function Home(){
   const [user,setuser]=useState([]);
 
   useEffect(()=>{
- fetch("http://localhost:5000/userDetails",{
+ fetch("https://dressup-backend-hw9q.onrender.com/userDetails",{
       method:"POST",
       crossDomain:true,
       headers:{

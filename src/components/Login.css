@@ -27,3 +27,9 @@
 .col{
     color: black;
 }
+
+.btdiv{
+    display: flex;
+    justify-content: end;
+    margin:2rem;
+}

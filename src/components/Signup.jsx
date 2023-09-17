@@ -8,7 +8,7 @@ function Signup(){
 
     function handlesub(e){
       e.preventDefault();
-      fetch("http://localhost:5000/register",{
+      fetch("https://dressup-backend-hw9q.onrender.com/register",{
         method:"POST",
         crossDomain:true,
         headers:{
@@ -34,7 +34,7 @@ function Signup(){
        <div className='container'>
         <div className='condiv'>
         <h3>SignUp </h3>
-        <form onSubmit={handlesub}>
+        <form>
             <div className='indiv'>
             <label className='lab' >First name</label>
             <input 
@@ -74,9 +74,13 @@ function Signup(){
             onChange={(e)=>setpswd(e.target.value)}/>
             </div>
 
-            <div className='indiv'>
+            {/* <div className='indiv'>
              <input type="submit" value="Signup" className='btn inp' />
-            </div>
+            </div> */}
+
+           <div className='btdiv'>
+            <button className='bt' onClick={handlesub}>SignUp</button>
+          </div>
             
         </form>
         </div>
