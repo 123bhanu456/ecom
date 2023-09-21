@@ -4,7 +4,7 @@ const KidsProd=[
     {
     id:1,
     title:"SHIRT",
-    description:"NetPlay",
+    description:"netplay",
     price:100,
     img:`${KidsImport.img1}`,
     quantity:1
@@ -22,7 +22,7 @@ const KidsProd=[
 {
     id:3,
     title:"SHIRT",
-    description:"Netpaly",
+    description:"netplay",
     price:300,
     img:`${KidsImport.img3}`,
     quantity:1

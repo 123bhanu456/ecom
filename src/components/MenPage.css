@@ -23,6 +23,33 @@
     display: flex;
     justify-content: center;
 }
+
+.Filter{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+  
+ 
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #89bacd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Style the value display */
+  #val {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #a3c3caa3;
+  }
 .price-addCart{
     display: flex;
     justify-content: space-between;

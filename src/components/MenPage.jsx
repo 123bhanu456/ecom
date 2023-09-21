@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './MenPage.css'
 import { Nav } from '../navbar/Nav';
 import { MenProd } from './MenProd';
@@ -10,18 +10,40 @@ function MenPage(){
     const Items=[...MenProd];
     const {AddCart}=useContext(Addtoc);
     const {Todis}=useContext(Addtoc);
+ 
+    const [val,setR]=useState(600);
+    const [com,setCom]=useState("");
 
+  
+    
   return (
     <div>
        <Nav/>
        <div className='heading'><h1 >Men</h1></div>
+        
+        <div className='Filter'>
+       <div>
+       <label for="pi_input">Price Range:</label>
+       <input id="pi_input" type="range" min="0" max="2000" step="50" onChange={(e)=>setR(e.target.value)} />
+         {val}
+       </div>
+
+       <div>
+        <label for="ser">Company  :  </label>
+        <input id="ser" type="text" onChange={(e)=>setCom(e.target.value)}/>
+       </div>
+        </div>
        
         <sec className='menPageDiv'>
             {
                Items.map((item)=>{
                 const { id, title, description, price,img} = item;
-                return(
-                    <div key={id} className='containerDiv' >
+
+                if(price<=val&&(com===description||com==="")){
+                  return(
+                  
+                    <div key={id}  className='containerDiv' >
+                      
                       <div className='imgdiv' onClick={()=>Todis(item)}>
                         <Link to='/display'>
                         <img className='img'
@@ -42,8 +64,10 @@ function MenPage(){
                        
                     </div>
                 );
+                }
+               
                 })
-            };
+            }
            
         </sec>
         <Footer/>
