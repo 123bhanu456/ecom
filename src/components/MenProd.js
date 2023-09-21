@@ -4,7 +4,7 @@ const MenProd=[
     {
     id:1,
     title:"SHIRT",
-    description:"NetPlay",
+    description:"netplay",
     price:100,
     img:`${MenImport.img1}`,
     quantity:1
@@ -22,7 +22,7 @@ const MenProd=[
 {
     id:3,
     title:"SHIRT",
-    description:"Netpaly",
+    description:"netplay",
     price:300,
     img:`${MenImport.img3}`,
     quantity:1
@@ -48,7 +48,7 @@ const MenProd=[
     id:6,
     title:"SHIRT",
     description:"IndianGarrageCo",
-    price:100,
+    price:800,
     img:`${MenImport.img6}`,
     quantity:1
 
@@ -57,7 +57,7 @@ const MenProd=[
     id:7,
     title:"SHIRT",
     description:"zudio",
-    price:100,
+    price:1000,
     img:`${MenImport.img7}`,
     quantity:1
 
@@ -66,7 +66,7 @@ const MenProd=[
 id:8,
 title:"SHIRT",
 description:"Yami",
-price:100,
+price:1300,
 img:`${MenImport.img8}`,
 quantity:1
 
