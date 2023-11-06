@@ -1,32 +1,35 @@
 .contentdiv{
     display: flex;
-    justify-content: space-around;
-    gap:4rem;
+   
     margin-top: 3rem;
     margin-bottom: 3rem;
-    height: 28rem;
-    background: #92c7d6;
-    background-image: -webkit-radial-gradient(top, circle cover, #97d0e1, #427388 100%);
-    background-image: -moz-radial-gradient(top, circle cover, #97d0e1, #427388 100%);
-    background-image: -o-radial-gradient(top, circle cover, #97d0e1, #427388 100%);
-    background-image: radial-gradient(top, circle cover, #97d0e1, #427388 100%);
+    height: 30rem;
+    background: #27374D;
+    background-image: -webkit-radial-gradient(top, circle cover,#274f7c , #294c68 100%);
+    background-image: -moz-radial-gradient(top, circle cover, #2c506b, #335c75 100%);
+    background-image: -o-radial-gradient(top, circle cover, #2c506b, #335c75 100%);
+    background-image: radial-gradient(top, circle cover, #2c506b, #335c75 100%);
     border-radius: 2rem;
 
 }
 
 .content{
-    /* width: 30rem; */
-    margin: 3rem ;
-    
+  
+    margin-top: 6rem;
+    margin-left: 3rem;
+   
 }
+
 .header{
     font-size: 3.7rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
+
 }
 .img1{
-    width: 15rem;
-    height: 20rem;
+    width: 30rem;
+    height: 24rem;
+   
 }
 .log{
    color:black;
