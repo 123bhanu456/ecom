@@ -52,7 +52,7 @@ function ContextCart(){
     <header>
   <div className='shop'>
   <div>
-  <NavLink to='./UserHome'> <i className="fa-solid fa-arrow-right-long"> Shop More </i></NavLink>
+  <NavLink to='/men'> <i className="fa-solid fa-arrow-right-long color"> Shop More </i></NavLink>
   </div>
   <div>
   <i class="fa-sharp fa-solid fa-cart-shopping">{totalItem}</i>
