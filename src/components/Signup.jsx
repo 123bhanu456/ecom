@@ -8,7 +8,7 @@ function Signup(){
 
     function handlesub(e){
       e.preventDefault();
-      fetch("https://d-up-4rqv.onrender.com/register",{
+      fetch("https://d-back.onrender.com/register",{
         method:"POST",
         crossDomain:true,
         headers:{
