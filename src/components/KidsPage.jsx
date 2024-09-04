@@ -65,7 +65,7 @@ function KidsPage(){
                 );
                 }
                 })
-            };
+            }
            
         </sec>
         <Footer/>
