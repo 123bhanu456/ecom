@@ -42,11 +42,11 @@ function Footer(){
         <h3 className='Head'>Install App</h3>
             <p>From App Store or Google Play</p>
             <div className='Store'>
-               <img  src="https://ecom-fawn-ten.vercel.app/images/FooterImg/appstore.png" alt="App Store"  className='store'/>
-               <img  src="https://ecom-fawn-ten.vercel.app/images/FooterImg/gplay.png" alt="Google Play Store" className='store' />
+            <a href="#"><i className="fab fa-app-store icon"></i></a>
+            <a href="#"><i className="fab fa-google-play icon"></i></a>
             </div>
             <p>Secured Payment Gateways</p>
-           <img src="https://ecom-fawn-ten.vercel.app/images/FooterImg/mainpay.gif" alt="Payements" className='store'/>
+            <a href="#"><i className="fas fa-credit-card icon"></i></a>
         </div>
       </div>
     )

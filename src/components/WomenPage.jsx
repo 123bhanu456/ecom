@@ -65,7 +65,7 @@ function WomenPage (){
                 );
                 }
                 })
-            };
+            }
            
         </sec>
         <Footer/>
