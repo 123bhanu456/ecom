@@ -21,12 +21,13 @@ function MenPage(){
        <Nav/>
        <div className='heading'><h1 >Men</h1></div>
         
-        <div className='Filter'>
-       <div>
-       <label for="pi_input">Price Range:</label>
-       <input id="pi_input" type="range" min="0" max="2000" step="50" onChange={(e)=>setR(e.target.value)} />
-         {val}
-       </div>
+       <div className='Filter'>
+  <div className="range-style">
+    <label for="pi_input">Price Range:</label>
+    <input id="pi_input" type="range" min="0" max="2000" step="50" onChange={(e) => setR(e.target.value)} />
+    {val}
+  </div>
+
 
        <div>
         <label for="ser">Company  :  </label>
